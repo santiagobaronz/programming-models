@@ -1,0 +1,13 @@
+operation\Sum.class
+view\MathView.class
+factory\MultiplyFactory.class
+factory\MathFactory.class
+factory\SubtractFactory.class
+model\MathOperation.class
+operation\Divide.class
+factory\DivideFactory.class
+operation\Subtract.class
+controller\MathController.class
+view\Main.class
+operation\Multiply.class
+factory\SumFactory.class
