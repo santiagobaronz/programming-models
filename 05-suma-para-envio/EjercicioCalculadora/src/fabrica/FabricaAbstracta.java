@@ -17,7 +17,5 @@ public abstract class FabricaAbstracta {
     
     public abstract EntradaAbstracta generarEntrada();
     public abstract SalidaAbstracta generarSalida();
-
-    public abstract OperacionAbstracta generarOperaciones();
     
 }

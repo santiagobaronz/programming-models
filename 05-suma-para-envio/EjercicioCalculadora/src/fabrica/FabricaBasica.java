@@ -32,13 +32,4 @@ public class FabricaBasica extends FabricaAbstracta{
         SalidaAbstracta salida = new SalidaBasica();
         return salida;
     }
-
-    @Override
-    public OperacionAbstracta generarOperaciones() {
-        
-        OperacionAbstracta operacion = new OperacionBasica();
-        return operacion;
-        
-    }
-    
 }
