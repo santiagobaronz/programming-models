@@ -1,4 +1,10 @@
 package Builders;
+import Ingredientes.Masa;
+import Ingredientes.MasaConcreta;
+import Ingredientes.Relleno;
+import Ingredientes.RellenoConcreto;
+import Ingredientes.Salsa;
+import Ingredientes.SalsaConcreta;
 import Producto.Pizza;
 
 public class PicantePizzaBuilder extends PizzaBuilder {
@@ -8,15 +14,18 @@ public class PicantePizzaBuilder extends PizzaBuilder {
     }
 
     public void buildMasa() {
-        pizza.setMasa("cocido");
+        Masa tipoMasa = new MasaConcreta();
+        pizza.setMasa(tipoMasa.masaCocida());
     }
 
     public void buildSalsa() {
-        pizza.setSalsa("picante");
+        Salsa tipoSalsa = new SalsaConcreta();
+        pizza.setSalsa(tipoSalsa.salsaPicante());
     }
 
     public void buildRelleno() {
-        pizza.setRelleno("pimienta+salchichón");
+        Relleno tipoRelleno = new RellenoConcreto();
+        pizza.setRelleno(tipoRelleno.rellenoPepinillos());
     }
 
 }
