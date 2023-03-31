@@ -5,3 +5,4 @@ In this repository you can find all the activities carried out for the class of 
 Projects:
 
 - Sum calculator using abstract factory (Done)
+- Pizzas creator using Builder method (Done)
