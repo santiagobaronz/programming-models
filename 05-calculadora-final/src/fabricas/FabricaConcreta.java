@@ -5,10 +5,10 @@
  */
 package fabricas;
 
-import entradasalida.EntradaAbstracta;
-import entradasalida.EntradaConcreta;
-import entradasalida.SalidaAbstracta;
-import entradasalida.SalidaConcreta;
+import EntradaSalidaPF.EntradaAbstracta;
+import EntradaSalidaPF.EntradaConcreta;
+import EntradaSalidaPF.SalidaAbstracta;
+import EntradaSalidaPF.SalidaConcreta;
 import operaciones.OperacionAbstracta;
 import operaciones.OperacionConcreta;
 

@@ -5,8 +5,8 @@
  */
 package fabricas;
 
-import entradasalida.EntradaAbstracta;
-import entradasalida.SalidaAbstracta;
+import EntradaSalidaPF.EntradaAbstracta;
+import EntradaSalidaPF.SalidaAbstracta;
 import operaciones.OperacionAbstracta;
 
 /**
