@@ -1,15 +1,19 @@
 package Plato;
 
+import EntradaSalidaPF.SalidaConcreta;
+
 public class SalchipapasPlato extends Plato {
+    SalidaConcreta retornar = new SalidaConcreta();
+
     protected void cortarIngredientes() {
-        System.out.println("Se cortan las salchichas y papas");
+        retornar.salida("Se cortan las salchichas y papas");
     }
 
     protected void cocinar() {
-        System.out.println("Se fritan las salchichas y papas");
+        retornar.salida("Se fritan las salchichas y papas");
     }
 
     protected void servir() {
-        System.out.println("Servir las papas con las salchichas ");
+        retornar.salida("Servir las papas con las salchichas ");
     }
 }

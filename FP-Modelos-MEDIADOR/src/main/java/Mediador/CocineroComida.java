@@ -1,6 +1,10 @@
 package Mediador;
 
+import EntradaSalidaPF.SalidaConcreta;
+
 public class CocineroComida extends Cocinero {
+    SalidaConcreta retornar = new SalidaConcreta();
+
     public CocineroComida(Mediador mediador) {
         super(mediador);
     }
@@ -12,6 +16,6 @@ public class CocineroComida extends Cocinero {
 
     @Override
     public void recibirMensaje(String mensaje) {
-        System.out.println("Cocinero de comida recibe el mensaje: " + mensaje);
+        retornar.salida("Cocinero de comida recibe el mensaje: " + mensaje);
     }
 }

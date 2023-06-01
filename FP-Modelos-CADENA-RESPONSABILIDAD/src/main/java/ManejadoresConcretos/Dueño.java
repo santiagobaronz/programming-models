@@ -1,10 +1,12 @@
 package ManejadoresConcretos;
 
+import EntradaSalidaPF.SalidaConcreta;
 import Solicitud.ManejadorSolicitud;
 import Solicitud.Solicitud;
 
 public class Dueño implements ManejadorSolicitud {
     private ManejadorSolicitud siguiente;
+    SalidaConcreta retornar = new SalidaConcreta();
 
     public void setSiguiente(ManejadorSolicitud siguiente) {
         this.siguiente = siguiente;
@@ -12,10 +14,10 @@ public class Dueño implements ManejadorSolicitud {
 
     public void manejarSolicitud(Solicitud solicitud) {
         if (solicitud.getTipo().equals("Solicitud")) {
-            System.out.println("El dueño está manejando la solicitud del cliente.");
+            retornar.salida("El dueño está manejando la solicitud del cliente.");
             // Lógica para manejar la queja
         } else {
-            System.out.println("La solicitud no puede ser manejada.");
+            retornar.salida("La solicitud no puede ser manejada.");
         }
     }
 }

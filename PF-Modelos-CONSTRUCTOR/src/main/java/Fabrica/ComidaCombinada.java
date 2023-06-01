@@ -1,10 +1,14 @@
 package Cocina;
 
+import EntradaSalidaPF.SalidaConcreta;
+
 public class ComidaCombinada {
     private String hamburguesa;
     private String papasFritas;
     private String bebida;
-
+    
+    SalidaConcreta retornar = new SalidaConcreta();
+    
     public void setHamburguesa(String hamburguesa) {
         this.hamburguesa = hamburguesa;
     }
@@ -18,8 +22,8 @@ public class ComidaCombinada {
     }
 
     public void mostrarComida() {
-        System.out.println("Hamburguesa: " + hamburguesa);
-        System.out.println("Papas Fritas: " + papasFritas);
-        System.out.println("Bebida: " + bebida);
+        retornar.salida("Hamburguesa: " + hamburguesa);
+        retornar.salida("Papas Fritas: " + papasFritas);
+        retornar.salida("Bebida: " + bebida);
     }
 }

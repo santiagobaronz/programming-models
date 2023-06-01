@@ -1,9 +1,12 @@
 
 package Cocina;
 
+import EntradaSalidaPF.SalidaConcreta;
 import Observador.Observador;
 
 public class Cocinero implements Observador {
+    SalidaConcreta retornar = new SalidaConcreta();
+
     private String nombre;
 
     public Cocinero(String nombre) {
@@ -11,6 +14,6 @@ public class Cocinero implements Observador {
     }
 
     public void actualizar() {
-        System.out.println(nombre + " fue actualizado de que no hay stock del producto");
+        retornar.salida(nombre + " fue actualizado de que no hay stock del producto");
     }
 }
